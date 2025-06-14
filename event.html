@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission</title>
+    <link rel="shortcut icon" sizes="512*512" href="./consecrated family logo png.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 ">
+            <div class="flex justify-between items-center py-4 ">
+                <div class="flex items-center space-x-2 ">
+
+                    <img src="./consecrated family logo png.png" width="80px" height="90px" alt="">
+                    <span class="text-l font-bold text-blue-500">CONSECRATED FAMILY</span>
+                </div>
+                <nav class="hidden md:flex space-x-6 font-bold">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+                    <a href="" class="text-gray-600 hover:text-primary transition-colors">Mission/Vision</a>
+                    <a href="messag.html" class="text-gray-600 hover:text-primary transition-colors">Download Messages</a>
+                    <a href="gallery.html" class="text-gray-600 hover:text-primary transition-colors"> Past Gallery</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+
+                    <div class="auth-required" style="display:none;">
+                        <span id="current-username" class="text-gray-600 mr-2"></span>
+                        <a href="#dashboard" class="btn-outline-primary">Dashboard</a>
+                        <button id="logout-button" class="text-gray-600 hover:text-red-600 ml-4">Logout</button>
+                    </div>
+
+                    <button class="md:hidden" id="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+                </div>
+            </div>
+            <!-- Mobile menu, hidden by default -->
+            <div id="mobile-menu" class="md:hidden hidden py-4">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-primary">Home</a>
+                <!-- <a href="#about" class="block py-2 text-gray-600 hover:text-primary">About</a> -->
+                <!-- <a href="mission.html" class="block py-2 text-gray-600 hover:text-primary">Mission/Vision</a> -->
+                <a href="" class="block py-2 text-gray-600 hover:text-primary">Mission/Vision</a>
+                <a href="messag.html" class="block py-2 text-gray-600 hover:text-primary">Download Messages</a>
+                <a href="gallery.html" class="block py-2 text-gray-600 hover:text-primary">Past Gallery</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="badge-primary text-blue-300 ">Who we are</span>
+                <h2 class="section-title">About Consecrated Family</h2>
+                <p class="section-description">We are a vibrant and inclusive community of believers dedicated to spiritual growth, fellowship, and service</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="./IMG/WhatsApp Image 2025-04-30 at 22.19.12_015639cc.jpg" alt="Church community" class="w-full h-auto rounded-lg shadow-lg" />
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision/Mision</h3>
+                    <p class="text-gray-600 mb-6  text-justify">
+                        The consecrated family was birthed through burden from the Lord. <i> "For,behold,the darkness shall cover the earth,and gross darkness the people:but the Lord shall arise upon thee,and his glory shall be seen upon thee.And the gentiles shall come to thy light,and kings to the brightness of thy rising".</i>                        The Lord made us realise that for this to come to fulfillment there is a need for men who will delibrately consecrate themselves to Him compleletely. And as we trust the to Lord respond to His Heartbeat,He gave us a word of assurance
+                        as a vision to run with.
+                    </p>
+                    <p class="text-gray-600 mb-6 text-justify">
+                        <i> "...for the earth shall be full of the Knowledge of the Lord, as the water cover the sea,<b>Isaiah11:9b.</b>"</i> As we pursue this cause,we are more than sure that the knowledge of the Lord will cover the earth as water cover
+                        the sea.Because the Lord will not do less than His word...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+
+    <video src="./consecrated family logo png.png" autoplay></video>
+
+
+    <!-- Contactsection -->
+    <div class="w-full px-4 py-8 bg-gray-100">
+        <!-- Contact Us Header -->
+        <h2 class="text-4xl font-bold text-blue-600 text-center mb-8">Need Counselling? Contact Us</h2>
+
+        <!-- Form Container -->
+        <form id="contactForm" method="POST" action="https://formsubmit.co/oyeyinkapaulo@gmail.com" class="w-full bg-white p-8 rounded-xl shadow-md max-w-full space-y-6">
+            <div>
+                <label class="block text-gray-700 font-semibold mb-1">Name</label>
+                <input type="text" name="Name" id="full-name" required class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+            <div>
+                <label class="block text-gray-700 font-semibold mb-1">Email</label>
+                <input type="email" name="Email" id="email-address" required class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+            <div>
+                <label class="block text-gray-700 font-semibold mb-1">Phone Number</label>
+                <input type="tel" name="phone Number" id="phone-number" required class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+            <div>
+                <label class="block text-gray-700 font-semibold mb-1">Message</label>
+                <textarea name="Message" id="messages" rows="5" required class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300">
+          Send Message
+        </button>
+            <p id="successMsg" class="text-green-600 text-center mt-4 hidden font-medium">✅ Message sent successfully!</p>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer class="bg-gray-900 text-white mt-20 ">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+
+                        <span class="text-xl font-bold">Consecrated Family</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Join us on a journey of faith, fellowship, spiritual growth and intense discipleship.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61559845857478&mibextid=ZbWKwL" class="text-white hover:text-primary" target="_blank">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+
+                        </a>
+                        <a href="https://t.me/consecratedffamily" class="text-white hover:text-primary" target="blank">
+                            <!-- Telegram Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-white-500 hover:text-primary transition-colors">
+        <path d="M12 0C5.372 0 0 5.372 0 12c0 6.626 5.372 12 12 12 6.628 0 12-5.374 12-12 0-6.628-5.372-12-12-12zm5.25 8.354l-1.53 7.21c-.115.516-.422.642-.855.399l-2.366-1.747-1.14 1.097c-.125.125-.23.23-.471.23l.168-2.386 4.344-3.927c.189-.167-.041-.26-.293-.093l-5.368 3.372-2.312-.724c-.502-.157-.512-.502.104-.74l9.036-3.489c.419-.156.785.093.651.738z"/>
+       </svg>
+
+
+                        </a>
+                        <a href="https://youtube.com/@consecratedpeople01?si=KmWUUrEKV4MlBO1d" class="text-white hover:text-primary" target="_blank">
+                            <!-- White YouTube Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 24 24" class="w-6 h-6 text-white-500 hover:text-primary transition-colors">
+          <path d="M19.615 3.184A4.152 4.152 0 0 0 16.55 2H7.45a4.152 4.152 0 0 0-3.065 1.184A4.19 4.19 0 0 0 3.2 6.265 41.933 41.933 0 0 0 3 12a41.933 41.933 0 0 0 .2 5.735 4.19 4.19 0 0 0 1.185 3.081A4.152 4.152 0 0 0 7.45 22h9.1a4.152 4.152 0 0 0 3.065-1.184 4.19 4.19 0 0 0 1.185-3.081A41.933 41.933 0 0 0 21 12a41.933 41.933 0 0 0-.2-5.735 4.19 4.19 0 0 0-1.185-3.081zM10 15.5v-7l6 3.5-6 3.5z"/>
+</svg>
+
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="event.html" class="text-gray-400 hover:text-white transition-colors">Mission & Vision</a></li>
+                        <li><a href="messag.html" class="text-gray-400 hover:text-white transition-colors">Download Messages</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Meeting Times</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Sunday Discipleship:3:00PM -6:00PM</li>
+                        <li>Intercessory Night: Monday 12AM</li>
+                        <li>Wednesday Bible Study: 5:00 PM</li>
+                        <li>Invasion: Every December</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-0.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                            <span>Lagos Ibadan express way,<br> Olopometa koloko Oju-odo, <br> behind Ilupeju hall,  Ibadan</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-0.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                            <span>+2348069777118, +2347053666677</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-0.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                            <span>oyeyinkapaulo@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2025 consecrated Family(KingdomPeople). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- scrool -->
+
+    <button id="scrollTopBtn" class="fixed top-1/2 right-4 z-50 px-4 py-2 bg-blue-600 text-white rounded shadow-lg hidden hover:bg-blue-700 transition">
+    Back to Top
+  </button>
+
+
+
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+
+
+
+
+</body>
+
+</script>
+
+</html>
